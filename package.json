@@ -1,0 +1,8 @@
+{
+  "name": "mk-vue-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JasonFF/mk-vue-components.git",
+  "author": "JasonFF <dfQ_Qjb@qq.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "mk-vue-components",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "JasonFF <dfQ_Qjb@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/JasonFF/mk-vue-components",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iview": "^2.14.1",
+    "vue": "^2.5.16",
+    "jquery": "^3.3.1"
+  }
+}

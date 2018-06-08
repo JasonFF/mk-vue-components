@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./iview.css">
+  <script src="./vue.min.js"></script>
+  <script src="./iview.min.js"></script>
+  <script src="./jquery.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="./table1.js"></script>
+  <script>
+    var table1 = new Table1('#app')
+    $(function () {
+      table1.init({
+        getUrl: function (page) {
+          return 'http://192.168.12.110:8080/b2b/rentInstrument/getData?pageSize=10&pageNumber=' + page
+        },
+        postUrl: function (data) {
+          function getparam(title) {
+            if (!data[title]) {
+              return '&'+title+'= '
+            }
+            return '&'+title+'='+data[title]
+          }
+          return 'http://192.168.12.110:8080/b2b/rentInstrument/update?id='+data.id+getparam('gysmc')+getparam('yqje')+getparam('tf')+getparam('cqgs')+getparam('rwl')+getparam('bz2')
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>
